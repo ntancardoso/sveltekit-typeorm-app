@@ -1,0 +1,11 @@
+{
+	"compilerOptions": {
+		"module": "commonjs",
+		"target": "es6",
+		"outDir": ".svelte-kit/output/server/db/migrations",
+		"rootDir": "./src",
+		"strict": true,
+		"esModuleInterop": true
+	},
+	"include": ["src/lib/server/db/migrations/**/*.ts"]
+}
