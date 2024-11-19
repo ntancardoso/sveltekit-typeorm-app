@@ -26,4 +26,11 @@ const ormconfig: DataSourceOptions = {
     migrations: isProd || isStage || isTest ? ['.svelte-kit/output/server/db/migrations/*.js'] : isDev ? ['src/lib/server/db/migrations/*.{ts,js}'] : [],
 };
 
+if (process.env.DB_TYPE === "sqlite") {
+    delete ormconfig.host;
+    delete ormconfig.port;
+    delete ormconfig.username;
+    delete ormconfig.password;
+}
+
 export default ormconfig;
