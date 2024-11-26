@@ -23,7 +23,7 @@ const ormconfig: DataSourceOptions = {
     database: process.env.DB_DATABASE,
     synchronize: process.env.DB_SYNCHRONIZE === "true",
     logging: process.env.DB_LOGGING === "true",
-    migrations: isProd || isStage || isTest ? ['.svelte-kit/output/server/db/migrations/*.js'] : isDev ? ['src/lib/server/db/migrations/*.{ts,js}'] : [],
+    migrations: ['.svelte-kit/output/server/db/migrations/*.js'],
 };
 
 if (process.env.DB_TYPE === "sqlite") {

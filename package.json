@@ -5,6 +5,7 @@
 	"license": "MIT",
 	"type": "module",
 	"scripts": {
+		"dev": "npm run start:dev",
 		"start:dev": "cross-env NODE_ENV=development vite dev",
 		"start:test": "cross-env NODE_ENV=test vite dev",
 		"start:stage": "cross-env NODE_ENV=stage vite dev",
