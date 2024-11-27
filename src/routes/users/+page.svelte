@@ -1,11 +1,23 @@
 <script>
+	import DataTable from '../../components/DataTable.svelte';
+
 	let { data } = $props();
+	let columns = [
+		{ name: 'Username', key: 'username' },
+		{ name: 'FirstName', key: 'firstName' },
+		{ name: 'LastName', key: 'lastName' },
+		{ name: 'Email', key: 'email' },
+		{ name: 'Created On', key: 'createdOn' }
+	]
 </script>
 
 <h1>Users</h1>
 
-<ul>
-	{#each data.users as { id, username }}
-		<li><a href="/user/{id}">{username}</a></li>
-	{/each}
-</ul>
+<DataTable entities={data.users} columns={columns} classNames = 'test'/>
+
+<style>
+:global(table.test > thead > tr > th) {
+    background-color: blue !important;
+    color: white;
+}
+</style>
