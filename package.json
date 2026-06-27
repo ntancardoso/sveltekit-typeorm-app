@@ -21,7 +21,7 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"format": "prettier --write .",
 		"lint": "prettier --check . && eslint .",
-		"test:unit": "rimraf ./dbtest.sqlite && cross-env NODE_ENV=test npx vitest",
+		"test:unit": "svelte-kit sync && rimraf ./dbtest.sqlite && cross-env NODE_ENV=test npx vitest",
 		"test": "npm run test:unit && npm run test:e2e",
 		"test:e2e": "cross-env NODE_ENV=test playwright test"
 	},
