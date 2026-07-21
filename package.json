@@ -33,14 +33,14 @@
 		"@types/eslint": "^9.6.0",
 		"@types/node": "^22.8.1",
 		"cross-env": "^7.0.3",
-		"eslint": "^9.7.0",
+		"eslint": "^10.7.0",
 		"eslint-config-prettier": "^9.1.0",
-		"eslint-plugin-svelte": "^2.36.0",
+		"eslint-plugin-svelte": "^3.22.0",
 		"globals": "^15.0.0",
 		"prettier": "^3.3.2",
 		"prettier-plugin-svelte": "^3.2.6",
 		"rimraf": "^6.0.1",
-		"sqlite3": "^5.1.7",
+		"sqlite3": "^6.0.1",
 		"svelte": "^5.55.9",
 		"svelte-check": "^4.0.9",
 		"ts-node": "^10.9.2",
@@ -54,6 +54,6 @@
 		"dotenv": "^17.4.2",
 		"pg": "^8.13.1",
 		"reflect-metadata": "^0.2.2",
-		"typeorm": "^0.3.29"
+		"typeorm": "^1.1.0"
 	}
 }
