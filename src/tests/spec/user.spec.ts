@@ -1,7 +1,7 @@
 import { describe, it, expect, beforeAll, afterAll } from 'vitest';
 import { AppDataSource } from '../vitest.setup';
-import { User } from '$lib/server/db/entities/User';
-import userService from '$lib/server/db/services/user.service';
+import { User } from '#lib/server/db/entities/User.ts';
+import userService from '#lib/server/db/services/user.service.ts';
 
 describe('User Entity Tests', () => {
 

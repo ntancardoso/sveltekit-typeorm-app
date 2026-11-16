@@ -1,7 +1,7 @@
 import { UserRepository } from "../repositories/user.repository";
 import { UserGroupService } from "../services/user-group.service";
 import { User } from "../entities/User";
-import { FindOptionsWhere, ObjectId } from "typeorm";
+import { type FindOptionsWhere, ObjectId } from "typeorm";
 
 export class UserService {
     private static instance: UserService;

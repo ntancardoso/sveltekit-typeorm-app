@@ -1,4 +1,4 @@
-import { AppDataSource } from '$lib/server/db/DataSource';
+import { AppDataSource } from '#lib/server/db/DataSource.ts';
 
 export const setup = async () => {
     console.log("Setup Called");

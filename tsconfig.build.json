@@ -5,7 +5,8 @@
 		"outDir": ".svelte-kit/output/server/db/migrations",
 		"rootDir": "./src",
 		"strict": true,
-		"esModuleInterop": true
+		"esModuleInterop": true,
+		"types": ["node"]
 	},
 	"include": ["src/lib/server/db/migrations/**/*.ts"]
 }

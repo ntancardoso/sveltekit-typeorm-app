@@ -7,5 +7,9 @@ export default defineConfig({
 		reuseExistingServer: true
 	},
 
+	use: {
+		extraHTTPHeaders: { Origin: 'http://localhost:4173' }
+	},
+
 	testDir: 'src/tests/e2e'
 });

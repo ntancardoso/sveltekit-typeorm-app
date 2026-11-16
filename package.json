@@ -4,6 +4,9 @@
 	"description": "A sample sveltekit with typeorm project. Can be used as reference",
 	"license": "MIT",
 	"type": "module",
+	"imports": {
+		"#lib/*": "./src/lib/*"
+	},
 	"scripts": {
 		"start:dev": "cross-env NODE_ENV=development vite dev",
 		"start:test": "cross-env NODE_ENV=test vite dev",
@@ -27,9 +30,9 @@
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.45.3",
-		"@sveltejs/adapter-auto": "^3.0.0",
-		"@sveltejs/kit": "^2.70.1",
-		"@sveltejs/vite-plugin-svelte": "^5.1.1",
+		"@sveltejs/adapter-auto": "^8.0.1",
+		"@sveltejs/kit": "^3.2.0",
+		"@sveltejs/vite-plugin-svelte": "^7.3.1",
 		"@types/eslint": "^9.6.0",
 		"@types/node": "^22.8.1",
 		"cross-env": "^7.0.3",
@@ -41,13 +44,13 @@
 		"prettier-plugin-svelte": "^3.2.6",
 		"rimraf": "^6.0.1",
 		"sqlite3": "^6.0.1",
-		"svelte": "^5.55.9",
+		"svelte": "^5.57.3",
 		"svelte-check": "^4.0.9",
 		"ts-node": "^10.9.2",
 		"tsx": "^4.19.1",
-		"typescript": "^5.0.0",
+		"typescript": "^6.0.3",
 		"typescript-eslint": "^8.0.0",
-		"vite": "^6.4.5",
+		"vite": "^8.3.8",
 		"vitest": "^5.0.5"
 	},
 	"dependencies": {

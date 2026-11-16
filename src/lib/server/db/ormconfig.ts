@@ -1,4 +1,4 @@
-import { DataSourceOptions } from 'typeorm';
+import type { DataSourceOptions } from 'typeorm';
 import { config } from "dotenv";
 
 const isTest = process.env.NODE_ENV === 'test';

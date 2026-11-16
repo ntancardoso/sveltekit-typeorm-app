@@ -1,14 +1,17 @@
-import { AppDataSource } from '$lib/server/db/DataSource';
+import { AppDataSource } from '#lib/server/db/DataSource.ts';
+
+let initializing: Promise<unknown> | undefined;
 
 export async function handle({ event, resolve }) {
   if (!AppDataSource.isInitialized) {
-    await AppDataSource.initialize().then(() => {
+    initializing ??= AppDataSource.initialize().then(() => {
       console.log("Data Source has been initialized!");
     })
     .catch((err) => {
+        initializing = undefined;
         console.error("Error during Data Source initialization", err);
-        return new Response("Database connection error", { status: 500 });
     });
+    await initializing;
   }
   const response = await resolve(event);
   return response;

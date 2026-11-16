@@ -1,7 +1,7 @@
 import { describe, it, expect, beforeAll, afterAll } from 'vitest';
 import { AppDataSource } from '../vitest.setup';
-import { Group } from '$lib/server/db/entities/Group';
-import groupService from '$lib/server/db/services/group.service';
+import { Group } from '#lib/server/db/entities/Group.ts';
+import groupService from '#lib/server/db/services/group.service.ts';
 
 describe('Group Entity Tests', () => {
 

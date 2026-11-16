@@ -1,5 +1,5 @@
-import { User } from "$lib/server/db/entities/User";
-import userService from "$lib/server/db/services/user.service.js";
+import { User } from "#lib/server/db/entities/User.ts";
+import userService from "#lib/server/db/services/user.service.ts";
 import { json } from "@sveltejs/kit";
 
 export async function POST({ request }) {
