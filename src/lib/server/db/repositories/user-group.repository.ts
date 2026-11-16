@@ -1,4 +1,4 @@
-import { FindOptionsWhere } from 'typeorm';
+import type { FindOptionsWhere } from 'typeorm';
 import { AppDataSource } from '../DataSource';
 import { UserGroup } from '../entities/UserGroup';
 import { User } from '../entities/User';

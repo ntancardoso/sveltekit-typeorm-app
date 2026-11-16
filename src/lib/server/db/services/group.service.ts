@@ -1,6 +1,6 @@
 import { GroupRepository } from "../repositories/group.repository";
 import { Group } from "../entities/Group";
-import { FindOptionsWhere, ObjectId } from "typeorm";
+import { type FindOptionsWhere, ObjectId } from "typeorm";
 
 export class GroupService {
     private static instance: GroupService;

@@ -1,4 +1,4 @@
-import { UserRepository } from "$lib/server/db/repositories/user.repository";
+import { UserRepository } from "#lib/server/db/repositories/user.repository.ts";
 import { json } from "@sveltejs/kit";
 
 
